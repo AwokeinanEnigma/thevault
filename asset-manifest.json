@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/enigmazone.github.io/static/css/main.32b2c357.css",
+    "main.js": "/enigmazone.github.io/static/js/main.e829f111.js",
+    "static/js/453.cc0eb925.chunk.js": "/enigmazone.github.io/static/js/453.cc0eb925.chunk.js",
+    "index.html": "/enigmazone.github.io/index.html",
+    "main.32b2c357.css.map": "/enigmazone.github.io/static/css/main.32b2c357.css.map",
+    "main.e829f111.js.map": "/enigmazone.github.io/static/js/main.e829f111.js.map",
+    "453.cc0eb925.chunk.js.map": "/enigmazone.github.io/static/js/453.cc0eb925.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b2c357.css",
+    "static/js/main.e829f111.js"
+  ]
+}
