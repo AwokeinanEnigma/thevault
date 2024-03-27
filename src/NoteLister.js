@@ -47,7 +47,7 @@ function MakeTextContent () {
 function CreateListItem(props)
 {
     function OnClick(){
-        console.log(props.NotePath)
+        console.log("fucK")
         window.location.href = "https://awokeinanenigma.github.io/thevault/notes/" + props.NotePath;
     }
     return (<ListGroup.Item
