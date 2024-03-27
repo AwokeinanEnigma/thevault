@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {MakeBigHeader, MakeHeader, MakeText} from "./BuilderFunctions";
+import {MakeBigHeader, MakeText} from "./BuilderFunctions";
 import {MakeNavBar} from "./Global";
 
 function App() {
@@ -21,7 +21,6 @@ function MakeTop() {
 function MakeHeaderImage(){
     return (<div className="masthead">
         <MakeBigHeader Content="The Vault"/>
-        <img className="img-thumbnail" width="1500" height="80" src="forest.jpg"/>
     </div>)
 }
 

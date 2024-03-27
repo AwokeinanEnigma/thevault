@@ -1,5 +1,4 @@
 import {Nav, Navbar} from "react-bootstrap";
-import {MakeBigHeader} from "./BuilderFunctions";
 
 export function MakeNavBar() {
     function OnClick() {
