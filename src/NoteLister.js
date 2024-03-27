@@ -36,7 +36,7 @@ function MakeTextContent () {
                         NoteName="Why?"
                         Subtitle="Why this website exists."
                         Date="3/27/2024"
-                        NotePath="notes/why"
+                        NotePath="/why"
                     />
                 </ListGroup>
             </div>
@@ -49,8 +49,8 @@ function CreateListItem(props)
     console.log("thevault/" + props.NotePath)
     const navigate = useNavigate();
     function OnClick(){
-        console.log("thevault/" + props.NotePath)
-        navigate("thevault/" + props.NotePath);
+        console.log(props.NotePath)
+        navigate(props.NotePath);
     }
     return (<ListGroup.Item
         as="li"
