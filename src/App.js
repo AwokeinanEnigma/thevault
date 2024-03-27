@@ -32,7 +32,7 @@ function MakeBig () {
         <div className="row">
             <div className="col-lg-8 mx-auto">
                 <h1 className="headerRegular" id="about">
-                    What is this?
+                    TEST?
                 </h1>
                 <MakeText Content="This is The Vault, a website that hosts a collection of notes on various topics."/>
                 <MakeText Content="It is not a portfolio, and it is not a resume. It is simply a collection of notes."/>
