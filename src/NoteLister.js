@@ -36,7 +36,7 @@ function MakeTextContent () {
                         NoteName="Why?"
                         Subtitle="Why this website exists."
                         Date="3/27/2024"
-                        NotePath="/notes/why"
+                        NotePath="thevault/notes/why"
                     />
                 </ListGroup>
             </div>
