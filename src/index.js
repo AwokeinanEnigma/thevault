@@ -12,22 +12,22 @@ import Why from "./notes/Why";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "thevault/",
         element: <App />,
     },
     {
-        path: "/notes",
+        path: "thevault/notes",
         element: <NoteLister />,
     },
     {
-        path: "/notes/why",
+        path: "thevault/notes/why",
         element: <Why />,
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <App/>
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
