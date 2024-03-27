@@ -46,13 +46,21 @@ function MakeTextContent () {
 
 function CreateListItem(props)
 {
+    console.log("thevault/" + props.NotePath)
+    const navigate = useNavigate();
+    function OnClick(){
+        console.log("thevault/" + props.NotePath)
+        navigate("thevault/" + props.NotePath);
+    }
     return (<ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
         action
-        href={props.NotePath}
         disabled = {false}
+        onClick={OnClick}
         variant="dark"
+        href={props.NotePath}
+
     >
         <div className="ms-2 me-auto">
             <div className="fw-bold">{props.NoteName}</div>
