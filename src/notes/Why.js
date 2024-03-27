@@ -1,12 +1,11 @@
-import './App.css';
-import { Nav, Navbar } from "react-bootstrap";
+import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FirstNote() {
-  return (
-      <div className="App">
-      <MakeTop />
-      </div>
+    return (
+        <div className="App">
+            <MakeTop />
+        </div>
     );
 }
 
@@ -29,7 +28,7 @@ function MakeBigHeader(props){
 
 function MakeHeaderImage(){
     return (<div className="masthead">
-        <MakeBigHeader Content="The Vault"/>
+        <MakeBigHeader Content="Note: Why?"/>
         <img className="img-thumbnail" width="1500" height="80" src="forest.jpg"/>
     </div>)
 }
@@ -56,21 +55,6 @@ function MakeText(props){
             {props.Content}
         </p>
     )
-}
-
-function MakeNavBar() {
-  function OnClick() {
-    console.log("damn");
-  }
-  return (
-      <Navbar expand="sm">
-          <Nav className="flex-fill justify-content-center">
-              <Nav.Link href="#home" onClick={OnClick} className="nav-link">about</Nav.Link>
-              <Nav.Link href="#contact" onClick={OnClick} className="nav-link">contact</Nav.Link>
-          </Nav>
-      </Navbar>
-      // i got a glock in my rari
-  );
 }
 
 function MakeBig () {

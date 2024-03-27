@@ -158,6 +158,9 @@
   }
 }
 
+.about {}
+.contact {}
+
 .fade-in {
   animation:fade-in 1s cubic-bezier(.165,.84,.44,1) both
 }

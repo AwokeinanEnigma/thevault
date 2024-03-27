@@ -7,7 +7,8 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import FirstNote from "./firstNote";
+import NoteLister from "./NoteLister";
+import Why from "./notes/Why";
 
 const router = createBrowserRouter([
     {
@@ -15,14 +16,18 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/bigGuy",
-        element: <FirstNote />,
+        path: "/notes",
+        element: <NoteLister />,
+    },
+    {
+        path: "/notes/why",
+        element: <Why />,
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <App />
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
