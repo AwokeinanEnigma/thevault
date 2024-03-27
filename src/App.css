@@ -1,0 +1,171 @@
+/* controls bg color */
+.main-div {
+  background-color: #000000;
+}
+
+
+.App {
+  margin: auto;
+  width: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.headerBig {
+  font-size: 75px;
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+.headerRegular {
+  font-size: 60px;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.headerSmall {
+  font-size: 45px;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* paragraph text */
+
+.paragraphRegular {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+/* get yo wack ass color outta here */
+.navbar {
+  background-color: #000000 !important;
+}
+
+.nav-link {
+  color: white  !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  display: inline-flex;
+
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #da2329; /* the color */
+
+
+  padding-bottom: var(--s) !important;
+  background:
+          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat !important;
+  -webkit-background-clip: text,padding-box !important;
+  background-clip: text,padding-box !important;
+  transition: 0.5s !important;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    padding: 0;
+  }
+}
+
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000000;
+  background-size: cover;
+}
+
+
+
+.nav-link:hover {
+  color: #cb430f !important;
+  --_p: 100%;
+}
+
+.navbar-nav {
+  display:table;
+  width:100%;
+  font-size: 35px ;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation:fade-in 1s cubic-bezier(.165,.84,.44,1) both
+}
+@keyframes fade-in {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
