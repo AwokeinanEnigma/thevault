@@ -36,7 +36,7 @@ function MakeTextContent () {
                         NoteName="Why?"
                         Subtitle="Why this website exists."
                         Date="3/27/2024"
-                        NotePath="thevault/why"
+                        NotePath="why"
                     />
                 </ListGroup>
             </div>
@@ -46,11 +46,9 @@ function MakeTextContent () {
 
 function CreateListItem(props)
 {
-    console.log("thevault/" + props.NotePath)
-    const navigate = useNavigate();
     function OnClick(){
         console.log(props.NotePath)
-        navigate(props.NotePath);
+        window.location.href = "https://awokeinanenigma.github.io/thevault/notes/" + props.NotePath;
     }
     return (<ListGroup.Item
         as="li"
@@ -59,7 +57,7 @@ function CreateListItem(props)
         disabled = {false}
         onClick={OnClick}
         variant="dark"
-        href={"thevault/" + props.NotePath}
+        href={props.NotePath}
 
     >
         <div className="ms-2 me-auto">
