@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "thevault/notes",
+        path: "thevault/#/notes",
         element: <NoteLister />,
     },
     {
