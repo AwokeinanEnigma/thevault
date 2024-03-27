@@ -47,24 +47,24 @@ function MakeTextContent () {
 function CreateListItem(props)
 {
     function OnClick(){
-        console.log("fucK")
+        //todo find a better solution
         window.location.href = "https://awokeinanenigma.github.io/thevault/notes/" + props.NotePath;
     }
-    return (<ListGroup.Item
+    return (
+        <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
         action
         disabled = {false}
         onClick={OnClick}
-        variant="dark"
+        variant="white"
         href={props.NotePath}
-
     >
         <div className="ms-2 me-auto">
             <div className="fw-bold">{props.NoteName}</div>
             {props.Subtitle}
         </div>
-        <Badge bg="primary" pill>
+        <Badge bg="dark" pill>
             {props.Date}
         </Badge>
     </ListGroup.Item>);
