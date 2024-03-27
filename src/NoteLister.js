@@ -59,7 +59,7 @@ function CreateListItem(props)
         disabled = {false}
         onClick={OnClick}
         variant="dark"
-        href={props.NotePath}
+        href={"thevault/" + props.NotePath}
 
     >
         <div className="ms-2 me-auto">
