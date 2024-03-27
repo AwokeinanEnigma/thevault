@@ -1,7 +1,7 @@
 {
   "name": "thevault",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://awokeinanenigma.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "rea ct-scripts eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
