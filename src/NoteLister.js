@@ -55,7 +55,6 @@ function CreateListItem(props)
         className="d-flex justify-content-between align-items-start"
         action
         disabled = {false}
-        href={props.NotePath}
         onClick={OnClick}
         variant="dark"
     >
