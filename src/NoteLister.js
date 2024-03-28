@@ -1,42 +1,41 @@
-import {MakeBigHeader, MakeText} from "./BuilderFunctions";
+import {MakeBigHeader, MakeBigImage, MakeText} from "./BuilderFunctions";
 import {MakeNavBar} from "./Global";
 import {Badge, ListGroup} from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+
 function NoteLister() {
     return (
         <div className="App">
-            <MakeNavBar />
-            <MakeMain />
+            <MakeNavBar/>
+            <MakeMain/>
         </div>
     );
 }
 
 function MakeMain() {
     return <div className="main-div">
-        {/* <MakeNavBar />*/}
-        <MakeHeaderImage />
-        <MakeTextContent />
+        <MakeHeaderImage/>
+        <MakeTextContent/>
     </div>
 }
 
-function MakeHeaderImage(){
+function MakeHeaderImage() {
     return (<div className="masthead">
         <MakeBigHeader Content="Notes"/>
-        <img className="img-thumbnail" width="1500" height="80" src="forest_black.jpg"/>
+        <MakeBigImage Source="forest_black.jpg" AltText="A red and black forest with a red and white sky and distant white mountains."/>
     </div>)
 }
 
-function MakeTextContent () {
+function MakeTextContent() {
     return (<div className="container">
         <div className="row">
-            <div className="col-lg-8 mx-auto">
+            <div className="col-lg-4 mx-auto">
                 <MakeText Content="Click on a note to view it."/>
                 <ListGroup as="ol">
                     <CreateListItem
                         NoteName="Why?"
-                        Subtitle="Why this website exists."
+                        Subtitle="An explanation on why this website exists."
                         Date="3/27/2024"
-                        NotePath="why"
+                        NotePath="notes/why"
                     />
                 </ListGroup>
             </div>
@@ -44,30 +43,22 @@ function MakeTextContent () {
     </div>);
 }
 
-function CreateListItem(props)
-{
-    function OnClick(){
-        //todo find a better solution
-        window.location.href = "https://awokeinanenigma.github.io/thevault/notes/" + props.NotePath;
-    }
+function CreateListItem(props) {
     return (
         <ListGroup.Item
-        as="li"
-        className="d-flex justify-content-between align-items-start"
-        action
-        disabled = {false}
-        onClick={OnClick}
-        variant="white"
-        href={props.NotePath}
-    >
-        <div className="ms-2 me-auto">
-            <div className="fw-bold">{props.NoteName}</div>
-            {props.Subtitle}
-        </div>
-        <Badge bg="dark" pill>
-            {props.Date}
-        </Badge>
-    </ListGroup.Item>);
+            className="d-flex justify-content-between align-items-start"
+            action
+            variant="dark"
+            href={props.NotePath}
+        >
+            <div className="ms-2 me-auto">
+                <div className="fw-bold">{props.NoteName}</div>
+                {props.Subtitle}
+            </div>
+            <Badge bg="dark" pill>
+                {props.Date}
+            </Badge>
+        </ListGroup.Item>);
 
 }
 

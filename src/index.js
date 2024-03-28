@@ -11,21 +11,21 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 const router = createBrowserRouter([
     {
         path: "thevault/",
-        element: <App />,
+        element: <App/>,
     },
     {
         path: "thevault/notes",
-        element: <NoteLister />,
+        element: <NoteLister/>,
     },
     {
         path: "thevault/notes/why",
-        element: <Why />,
+        element: <Why/>,
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}/>
     </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
