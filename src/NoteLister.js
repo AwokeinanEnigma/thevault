@@ -37,6 +37,12 @@ function MakeTextContent() {
                         Date="3/27/2024"
                         NotePath="notes/why"
                     />
+                    <CreateListItem
+                        NoteName="Fangames"
+                        Subtitle="Some thoughts on Hikki Mod and fangames."
+                        Date="4/2/2024"
+                        NotePath="notes/hikki"
+                    />
                 </ListGroup>
             </div>
         </div>

@@ -23,6 +23,14 @@ export function MakeImagedHeader(props) {
     </div>)
 }
 
+
+export function MakeImage(props){
+    return (<img
+        className="centeredImage"
+        src={props.Source}
+        alt={props.AltText}
+    />)
+}
 export function MakeHeader(props) {
     return (
         <h1 className="headerRegular">

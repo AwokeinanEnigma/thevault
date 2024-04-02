@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import NoteLister from "./NoteLister";
 import Why from "./notes/Why";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Hikki from "./notes/Hikki";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "thevault/notes/why",
         element: <Why/>,
+    },
+    {
+        path: "thevault/notes/hikki",
+        element: <Hikki/>,
     },
 ]);
 
