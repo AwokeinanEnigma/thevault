@@ -39,6 +39,15 @@ export function MakeHeader(props) {
     );
 }
 
+export function MakeHeaderJustified(props) {
+    return (
+        <h1 className="headerRegularJustified">
+            {props.Content}
+        </h1>
+    );
+}
+
+
 export function MakeSmallHeader(props) {
     return (
         <h2 className="headerSmall">
@@ -50,7 +59,24 @@ export function MakeSmallHeader(props) {
 // text funcs
 export function MakeText(props) {
     return (
-        <p className="paragraphRegular">
+        <p className="paragraphRegular"  >
+            {props.Content}
+        </p>
+    )
+}
+
+export function MakeFreakyText(props) {
+    return (
+        <p className="paragraphFreaky" >
+            {props.Content}
+        </p>
+    )
+}
+
+
+export function MakeTextCentered(props) {
+    return (
+        <p className="paragraphCentered">
             {props.Content}
         </p>
     )

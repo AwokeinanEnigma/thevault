@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {MakeHeader, MakeHeaderImage, MakeImagedHeader, MakeText} from "./BuilderFunctions";
+import {MakeHeader, MakeHeaderImage, MakeImagedHeader, MakeText, MakeTextCentered} from "./BuilderFunctions";
 import {MakeNavBar} from "./Global";
 
 function App() {
@@ -23,15 +23,14 @@ function MakePage() {
 function MakeBody() {
     return (<div className="container">
         <div className="row">
-            <div className="col-lg-8 mx-auto">
+            <div className="col-lg-7 mx-auto">
                 <MakeHeader Content="What is this?"/>
-                <MakeText Content="This is The Vault, a website that hosts a collection of notes on various topics."/>
-                <MakeText Content="It is not a portfolio, and it is not a resume. It is simply a collection of notes."/>
-                <MakeText Content="Do not take any of the words written on this website as gospel. Thank you."/>
+                <MakeTextCentered Content="The Vault is a website which hosts a collection of notes on various topics."/>
+                <MakeTextCentered Content="Thank you."/>
 
                 <MakeHeader Content="Contact"/>
-                <MakeText Content="thomas(dot)fenton(at)protonmail(dot)com"/>
-                <MakeText Content="._enigma on discord"/>
+                <MakeTextCentered Content="urbanawakening on discord. @enigmaisonline on twitter (also known as X)."/>
+                <MakeTextCentered Content="Do not contact me to ask me to remove notes or change them, I do not care. A note will only be removed if you show up to my residence and beat me in hand-to-hand combat."/>
             </div>
         </div>
     </div>);

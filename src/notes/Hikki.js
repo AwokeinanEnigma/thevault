@@ -1,7 +1,15 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {MakeNavBar} from "../Global";
-import {MakeBigHeader, MakeBigImage, MakeImage, MakeImagedHeader, MakeSmallHeader, MakeText} from "../BuilderFunctions";
+import {
+    MakeBigHeader,
+    MakeBigImage, MakeHeader, MakeHeaderJustified,
+    MakeImage,
+    MakeImagedHeader,
+    MakeSmallHeader,
+    MakeText,
+    MakeTextCentered
+} from "../BuilderFunctions";
 
 function FirstNote() {
     return (
@@ -14,7 +22,6 @@ function FirstNote() {
 
 function MakePage() {
     return <div className="main-div">
-        <MakeImagedHeader Content="Note: Fangames" Source="../forest_bluered.jpg" AltText="A blue forest with a redish sky and distant red mountains." />
         <MakeMain/>
     </div>
 }
@@ -23,7 +30,7 @@ function MakeMain() {
     return (<div className="container">
         <div className="row">
             <div className="col-lg-9 mx-auto">
-                <MakeSmallHeader Content="Fangames and Hikki"/>
+                <MakeHeaderJustified Content="Fangames and Omori"/>
                 <MakeText
                     Content="It’s been hard to write this note. Initially, I was going to do a deep-dive into my work with the Omori Hikki Mod, where I would give my thoughts on the project. I would’ve talked about some regrets, some things I think I did right, and some things I’d do much differently if I had a do-over. However, I realized that a note like that would be worthless. Reflecting on the past is always good, but a single person’s recollection of the past is rarely useful. I also understand that my perspective of the past is heavily warped, out of order, and slightly schizophrenic. So, I dropped that. It’s unfortunate because I had an entire draft lined up."
                 />
@@ -34,7 +41,7 @@ function MakeMain() {
                 <MakeText
                     Content="I’m still going to slightly discuss Hikki, but it’s no longer going to be the focus. I don’t want to go digging through the past, since there’s no point in doing that. Sometimes, it’s better to let the pond stay still. Who knows what’ll come up when you start skipping stones? Ignorance is bliss, and sometimes, the best answer is no answer at all."
                 />
-                <MakeText
+                <MakeTextCentered
                     Content="Now, onto the main topic of this note: Fangames!"
                 />
                 <MakeText
@@ -43,8 +50,8 @@ function MakeMain() {
                 <MakeText
                     Content="I’ve worked on a few fangames before, mainly Rainy Mari, Hikki Mod, and a few Mother fangames that aren’t worth mentioning. Usually, when I work on a fangame, I mostly do programming. I’m the guy who writes gameplay systems, creates cutscenes, and stuff like that. I’ve also done some custom engine stuff for a fangame before, but talking about engine development is boring, so I won’t discuss that too much. All I can say about fangame programming is that you should almost always go with an engine instead of trying to make your own from the ground up. A lot of manpower is involved in making an engine and most fan projects do not have that manpower."
                 />
-                <MakeText
-                    Content="Trust me man, it’s not worth it to roll with whatever you’ve created with Love2D/SFML/Monogame. Just use Godot or something."
+                <MakeTextCentered
+                    Content="Just trust me on this one - it’s not worth it to roll with whatever you’ve created with Love2D/SFML/Monogame. Just use Godot or something."
                 />
                 <MakeText
                     Content="I’d like to talk about Hikki and Rainy Mari, which are both Omori fangames with the same general idea. Though, Rainy Mari calls itself a mod, but it feels a lot like a fangame! Both projects have the same idea, Omori in reverse - sister lives, brother dies. I worked on both projects at the same time, but I worked on Hikki a lot more than I did Rainy Mari. I did the same thing on both though, mainly cutscenes with some minor concepting. I didn’t touch battles or enemies on either project, mostly because I didn’t know how RPGMAKER MV’s battle system worked on a basic level, and Omori had a bunch of plugins that made it more confusing. I was happy to stick to cutscenes and event scripting, even if it was boring and arduous. "

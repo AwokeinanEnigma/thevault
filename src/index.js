@@ -8,6 +8,7 @@ import NoteLister from "./NoteLister";
 import Why from "./notes/Why";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Hikki from "./notes/Hikki";
+import SunlessElysiumDevelopmentLog1 from "./notes/SunlessElysiumDevelopmentLog1";
 
 const router = createBrowserRouter([
     {
@@ -26,14 +27,16 @@ const router = createBrowserRouter([
         path: "thevault/notes/hikki",
         element: <Hikki/>,
     },
+    {
+        path: "thevault/notes/sunlesselysiumdevelopmentlog1",
+        element: <SunlessElysiumDevelopmentLog1/>,
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <RouterProvider router={router}/>
-    </React.StrictMode>
+    <RouterProvider router={router}/>
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
