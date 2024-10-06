@@ -6,6 +6,7 @@ export function MakeNavBar() {
             <Nav className="flex-fill justify-content-center">
                 <Nav.Link href="/thevault/"  className="nav-link">/home</Nav.Link>
                 <Nav.Link href="/thevault/notes" className="nav-link">/notes</Nav.Link>
+                <Nav.Link href="/thevault/stuff" className="nav-link">/stuff</Nav.Link>
             </Nav>
         </Navbar>
     );

@@ -26,11 +26,9 @@ function MakeBody() {
             <div className="col-lg-7 mx-auto">
                 <MakeHeader Content="What is this?"/>
                 <MakeTextCentered Content="The Vault is a website which hosts a collection of notes on various topics."/>
-                <MakeTextCentered Content="Thank you."/>
-
                 <MakeHeader Content="Contact"/>
                 <MakeTextCentered Content="urbanawakening on discord. @enigmaisonline on twitter (also known as X)."/>
-                <MakeTextCentered Content="Do not contact me to ask me to remove notes or change them, I do not care. A note will only be removed if you show up to my residence and beat me in hand-to-hand combat."/>
+                <MakeTextCentered Content="Do not contact me to ask me to remove notes or change them. A note will only be removed if you show up to my place of residence and beat me in hand-to-hand combat."/>
             </div>
         </div>
     </div>);

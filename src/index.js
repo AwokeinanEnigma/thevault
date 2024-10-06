@@ -9,6 +9,7 @@ import Why from "./notes/Why";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Hikki from "./notes/Hikki";
 import SunlessElysiumDevelopmentLog1 from "./notes/SunlessElysiumDevelopmentLog1";
+import Stuff from "./Stuff";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path: "thevault/notes/sunlesselysiumdevelopmentlog1",
         element: <SunlessElysiumDevelopmentLog1/>,
+    },
+    {
+        path: "thevault/stuff",
+        element: <Stuff/>,
     },
 ]);
 

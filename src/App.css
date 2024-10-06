@@ -217,3 +217,47 @@
         opacity: 1
     }
 }
+
+/* App.css */
+/* App.css */
+.box {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: row;
+}
+
+.box-image {
+    width: 184px;
+    height: 69px;
+    margin-right: 20px;
+}
+
+/* App.css */
+.box-text {
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Show only two lines */
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.box-text.expanded {
+    -webkit-line-clamp: unset; /* Remove the line clamp when expanded */
+    white-space: normal;
+}
+
+button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
